@@ -79,7 +79,11 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: EjemploHerok_production
-  username: EjemploHerok
-  password: <%= ENV['EJEMPLOHEROK_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: ec2-174-129-218-106.compute-1.amazonaws.com
+  database: d2b88pq1rr7nba
+  port: 5432
+  username: nthpmsdpgphflr
+  password: 77009832f456bf6fd09148a71794112f16240ed11c6bf767c5e68fe0513d1d41
